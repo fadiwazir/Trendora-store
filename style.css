@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+}
+:root {
+  --colorOne: #fbf5f3;
+  --colorTwo: #e28413;
+  --colorThree: #000022;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+header .logo h1 {
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: 700;
+}
+.search {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  background-color: #f6f6f6;
+  padding: 12px 34px;
+  border-radius: 24px;
+  transition: box-shadow 0.3s;
+}
+.search:hover {
+  background-color: #f3f3f3;
+}
+.search:focus-within {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+.search .srh {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-right: 10px;
+}
+.search .srh::placeholder{
+    font-size: 16px;
+    font-weight: 600;
+}
+.search .srh::placeholder,
+.icon {
+  color: rgba(0, 0, 0, 0.5);
+}
+.items{
+    display: flexbox;
+    justify-content: space-between;
+}
+.items a {
+    text-decoration: none;
+    color: #000022;
+    margin: 10px;
+}
