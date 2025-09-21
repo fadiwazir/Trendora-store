@@ -54,6 +54,10 @@ header .logo h1 {
 .icon {
   color: rgba(0, 0, 0, 0.5);
 }
+input[type="search"] {
+  font-size: 16px;
+  font-weight: 500;
+}
 .items {
   display: flexbox;
   justify-content: space-between;
@@ -62,6 +66,10 @@ header .logo h1 {
   text-decoration: none;
   color: #000022;
   margin: 10px;
+  transition: 0.4s;
+}
+.items a:hover {
+  color: var(--colorTwo);
 }
 .section-one {
   height: 90vh;
@@ -98,8 +106,42 @@ header .logo h1 {
   transition: 0.3s;
 }
 .btn:hover {
-  background-color: #ca7309;;
+  background-color: #ca7309;
 }
 .section-one img {
   width: 400px;
+}
+.category {
+  text-align: center;
+}
+.category > h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories .item {
+  background-color: rgb(226, 132, 19);
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  box-shadow: 1px 2px 20px 1px rgba(226, 132, 19, 0.5);
+  cursor: pointer;
+  transition: 0.8s;
+}
+.categories .item i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.categories .item:hover {
+  transform: scale(1.05);
 }
