@@ -9,7 +9,7 @@
 }
 :root {
   --colorOne: #fbf5f3;
-  --colorTwo: rgb(226, 132, 19);
+  --colorTwo: #e28413;
   --colorThree: #000022;
 }
 body {
@@ -34,6 +34,7 @@ header .logo h1 {
   padding: 12px 34px;
   border-radius: 24px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+  margin-top: 18px;
   transition: 0.4s;
 }
 .search:hover {
@@ -62,6 +63,9 @@ input[type="search"] {
   display: flexbox;
   justify-content: space-between;
 }
+.items i {
+    font-size: 18px;
+}
 .items a {
   text-decoration: none;
   color: #000022;
@@ -72,7 +76,7 @@ input[type="search"] {
   color: var(--colorTwo);
 }
 .section-one {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -200,4 +204,26 @@ transition: 0.6s;
     border: none;
     text-align: center;
 }
-
+.discount-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.discount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 70%;
+}
+.discount .discount-text{
+    font-size: 24px;
+    color: #000022;
+    margin-left: 100px;
+}
+.discount .discount-text span{
+    color: var(--colorTwo);
+}
+.discount .discount-text p{
+    font-size: 18px;
+}
