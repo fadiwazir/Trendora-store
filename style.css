@@ -70,7 +70,7 @@ input[type="search"] {
 }
 
 .items {
-  display: flexbox;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -80,7 +80,7 @@ input[type="search"] {
 
 .items a {
   text-decoration: none;
-  color: #000022;
+  color: var(--colorThree);
   margin: 10px;
   transition: 0.4s;
 }
@@ -154,7 +154,7 @@ input[type="search"] {
 }
 
 .categories .item {
-  background-color: rgb(226, 132, 19);
+  background-color: var(--colorTwo);
   width: 200px;
   height: 200px;
   margin: 30px;
@@ -258,7 +258,7 @@ input[type="search"] {
 
 .discount .discount-text {
   font-size: 24px;
-  color: #000022;
+  color: var(--colorThree);
   margin-left: 100px;
 }
 
@@ -274,7 +274,7 @@ footer {
   background-color: var(--colorThree);
   padding: 30px;
   height: auto;
-  color: white;
+  color: var(--colorOne);
 }
 
 .footer-section {
@@ -296,7 +296,7 @@ footer {
 }
 
 .contact .icons {
-  color: #f2f2f2;
+  color: var(--colorOne);
   cursor: pointer;
 }
 
@@ -487,9 +487,4 @@ footer {
   .contact .icons i {
     margin: 0 10px;
   }
-}
-
-/* Medium screen / Desktop */
-@media only screen and (max-width: 992px) {
-    
 }
